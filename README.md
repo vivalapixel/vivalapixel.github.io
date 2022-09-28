@@ -1,2 +1,0 @@
-
-Viva la Pixel
