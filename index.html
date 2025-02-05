@@ -1,85 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Viva la Pixel</title>
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Indie Game Developer</title>
     <style>
-    body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
-    .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
-    .fa-anchor,.fa-coffee {font-size:200px}
-	.container {
-		 width: 80%;
-		height: auto;
-		background-color: #ffffff;
-		margin-right: auto;
-		margin-left: auto;
-		color: #000000;}
-	</style>
-  </head>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0; /* Light gray background */
+            color: #333; /* Dark gray text */
+        }
+
+        header {
+            background-color: #333; /* Darker gray header */
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #fff; /* White sections */
+            border-radius: 8px; /* Rounded corners for sections */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block; /* Makes the image a block element */
+            margin: 10px auto; /* Centers the image */
+            border-radius: 8px; /* Rounded corners for images */
+        }
+
+        .app-link {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff; /* Blue button */
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+         footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: relative; /* Fixes footer to bottom */
+            bottom: 0; /* Fixes footer to bottom */
+            width: 100%; /* Fixes footer to bottom */
+        }
+
+        /* Responsive Design - Adjust as needed */
+        @media (max-width: 768px) {
+            section {
+                margin: 10px;
+            }
+        }
+    </style>
+</head>
 <body>
 
-<!-- Navbar -->
+    <header>
+        <h1>Your Name</h1>
+        <h2>Indie Game Developer</h2>
+    </header>
 
+    <section>
+        <h2>About Me</h2>
+        <p>Write a short and engaging introduction about yourself as a game developer.  What are your passions? What kind of games do you make? What's your experience?  Connect with your audience!</p>
+    </section>
 
-<div class="container">
-    <img src = "logo.png" style="width:100%">
+    <section>
+        <h2>My Games</h2>
 
-     <!-- end container div class --> 
-</div>
+        <div id="games-container">
+            <div class="game">
+                <h3>Game Title 1</h3>
+                <img src="path/to/game1_screenshot.jpg" alt="Game 1 Screenshot">
+                <p>Short description of Game 1. What's the gameplay like?  What platforms is it on?</p>
+                <a class="app-link" href="your_google_play_link_1">Get it on Google Play</a>
+            </div>
 
-<div class="container">
-    
-    <p><strong><font size="500" color="#c3b9da">Viva la Pixel!</font></strong></p>
-    <p><font size="5"> We make fun and abstract games for smartphones and tablets.</font></p>
-     <!-- end container div class --> 
-</div>
+            <div class="game">
+                <h3>Game Title 2</h3>
+                <img src="path/to/game2_screenshot.jpg" alt="Game 2 Screenshot">
+                <p>Short description of Game 2.</p>
+                <a class="app-link" href="your_google_play_link_2">Get it on Google Play</a>
+            </div>
 
-<div class="container">
-    
-    <p><font size="5">
+            </div>
+    </section>
 
+    <section>
+        <h2>Contact</h2>
+        <p>Email: your.email@example.com</p>
+        <p>Twitter: @YourTwitterHandle</p>  <p>Other Links: <a href="your_itch_io_link">Itch.io</a>, <a href="your_other_platform">Other Platform</a> </p>
+    </section>
 
-
-
-	</font></p>
-     <!-- end container div class --> 
-</div>
-<div class="container">
-    <h2><strong><font size="100">Our games</font></strong></h2>
-    
-     <!-- end container div class --> 
-</div>
-<div class="container">
-    
-    <img src = "My Puzzle Space.png" style="width:20%">
-     <!-- end container div class --> 
-</div>
-<div class="container">
-    
-    <p><font size="5"> My Puzzle Space</font></p>
-     <!-- end container div class --> 
-</div>
-  </body>
-
-</div>
-
-
-<script>
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-</script>
+    <footer>
+        <p>&copy; 2023 Your Name. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
